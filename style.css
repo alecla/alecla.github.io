@@ -57,6 +57,7 @@ button {
 }
 
 button.escape {
+    font-size: 16px;
     top: 80%;
     display: none;
 }
