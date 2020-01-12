@@ -1,0 +1,37 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>hestraorden</title>
+  <meta name="description" content="hestraorden">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class='container'>
+        <button class='enter' onClick="enter()">hestraorden</button>
+    </div>
+    <div>
+        <video loop muted>
+             <source src="hestraorden.mp4" type="video/mp4">
+             <track label="English" kind="subtitles" srclang="en" src="sub.vtt" default>
+        </video>
+        <button class='escape' onClick="escape()">escape</button>
+        <p>hestraorden 2020. puss.</p>
+    </div>
+</body>
+
+<script>
+    const enterButton = document.querySelector('.enter');
+    const escapeButton = document.querySelector('.escape');
+    const video = document.querySelector("video");
+    const container = document.querySelector(".container");
+
+
+    const enter = () => {
+        video.muted = false;
+        video.play();
+        container.style.display = "none";
+        escapeButton.style.display = 'block';
+    }
+</script>
+</html>
