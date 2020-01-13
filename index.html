@@ -10,30 +10,15 @@
     <div class='container'>
         <button class='enter' onClick="enter()">Click if you like pina coladas</button>
     </div>
-    <div>
-        <video loop muted>
-             <source src="hestraorden.mp4" type="video/mp4">
-             <track label="English" kind="subtitles" srclang="en" src="sub.vtt" default>
-        </video>
-        <button class='escape' onClick="mute()">muta mig. puss.</button>
-    </div>
 </body>
 
 <script>
-    const enterButton = document.querySelector('.enter');
     const escapeButton = document.querySelector('.escape');
-    const video = document.querySelector("video");
     const container = document.querySelector(".container");
 
     const enter = () => {
-        video.muted = false;
-        video.play();
         container.style.display = "none";
         escapeButton.style.display = 'block';
-    }
-
-    const mute = () => {
-        video.muted = true;
     }
 </script>
 </html>
